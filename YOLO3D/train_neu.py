@@ -87,7 +87,7 @@ def train(
 
     # model
     base_model = model_factory[select_model]
-    model = regressor_factory[select_model](model=base_model, bins = bin_count).cuda()  #!!!!!!!!!!! neu zum fix der anzahl der Bins
+    model = regressor_factory[select_model](model=base_model, bins = bin_count).cuda()  
     
     # optimizer
     opt_SGD = torch.optim.SGD(model.parameters(), lr=hyper_params['lr'], momentum=0.9)
