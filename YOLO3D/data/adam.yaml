@@ -1,0 +1,26 @@
+path: ../data/daten  # dataset root dir
+train: images_2  # train images (relative to 'path') 128 images
+val: images_2
+# Classes
+nc: 19  # number of classes
+names : [
+    "small_black_alu",
+    "small_grey_alu",
+    "large_black_alu",
+    "large_grey_alu",
+    "screw",
+    "small_nut",
+    "large_nut",
+    "axis2",
+    "bearing2",
+    "housing",
+    "motor2",
+    "spacer",
+    "screwdriver",
+    "wrench",
+    "drill",
+    "allenkey",
+    "blue_container",
+    "red_container",
+    "workstation"
+]

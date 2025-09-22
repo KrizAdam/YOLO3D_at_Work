@@ -1,0 +1,36 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
+# COCO 2017 dataset http://cocodataset.org by Microsoft
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: data/daten # dataset root dir
+train: images # train images (relative to 'path') 118287 images
+val: ../val_daten/images # val images (relative to 'path') 5000 images
+test:  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# Classes
+names:
+ 0: small_black_alu
+ 1: small_grey_alu
+ 2: large_black_alu
+ 3: large_grey_alu
+ 4: screw
+ 5: small_nut
+ 6: large_nut
+ 7: axis2
+ 8: bearing2
+ 9: housing
+ 10: motor2
+ 11: spacer
+ 12: screwdriver
+ 13: wrench
+ 14: drill
+ 15: allenkey
+ 16: blue_container
+ 17: red_container
+ 18: workstation
